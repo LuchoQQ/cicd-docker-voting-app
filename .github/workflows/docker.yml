@@ -1,4 +1,4 @@
-name: CICD
+name: prueba-cicd
 
 on:
   push:
