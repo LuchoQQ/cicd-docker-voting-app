@@ -20,8 +20,10 @@ jobs:
       run: |
         cd vote
         docker build -t $REGISTRY/$IMAGE_NAME:vote-1.0.0 .
+        cd ..
         cd result
         docker build -t $REGISTRY/$IMAGE_NAME:result-1.0.0 .
+        cd ..
         cd worker
         docker build -t $REGISTRY/$IMAGE_NAME:worker-1.0.0 .
     - name: docker images
